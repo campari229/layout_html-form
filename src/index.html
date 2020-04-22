@@ -9,7 +9,10 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST" autocomplete="off">
+  <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    onsubmit="onSubmit()"
+    method="POST">
     <fieldset>
       <legend>Personal information</legend>
       <div class="wrapper">
@@ -22,7 +25,13 @@
       </div>
       <div class="wrapper">
         <label for="how-old">How old are You?</label>
-        <input type="number" id="how-old" name="how-old" min="6" max="120" value="12">
+        <input
+          type="number"
+          id="how-old"
+          name="how-old"
+          min="6"
+          max="120"
+          value="12">
       </div>
       <div class="wrapper">
         <label for="birth-day">Full date of birth</label>
@@ -37,7 +46,11 @@
       <legend>Registration</legend>
       <div class="wrapper">
         <label for="e-mail">E-mail:</label>
-        <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com">
+        <input
+          type="email"
+          name="e-mail"
+          id="e-mail"
+          placeholder="email@example.com">
       </div>
       <div class="wrapper">
         <label for="password">Password:</label>
@@ -71,14 +84,26 @@
       </div>
       <div class="wrapper">
         <label for="rate-of-work">How do you rate our work?</label>
-        <input type="range" id="rate-of-work" name="rate-of-work" min="0" max="10" value="0">
+        <input
+          type="range"
+          id="rate-of-work"
+          name="rate-of-work"
+          min="0"
+          max="10"
+          value="0">
       </div>
     </fieldset>
     <fieldset>
       <legend>Additional info</legend>
       <div class="wrapper">
         <label for="comments">Comments:</label>
-        <textarea name="comments" id="comments" cols="30" minlength="5" maxlength="50"></textarea>
+        <textarea
+          name="comments"
+          id="comments"
+          cols="30"
+          minlength="5"
+          maxlength="50">
+        </textarea>
       </div>
       <div class="wrapper">
         <label for="recommend">Would you recommend us?</label>
